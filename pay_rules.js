@@ -3,7 +3,7 @@
 
 
 //variables 
-let payRate = 17.30;
+let payRate =17.30;
 let hoursWorked = 45;
 
 //determine how many hours are normal hours vs overtime hours
@@ -13,8 +13,8 @@ let overtimeHours = 5;
 
 if (hoursWorked > 40) {
     // this os where we needed to figure out the overtime hours 
-    regularHours = 45;
-    overtimeHours = hoursWorked - 40
+    regularHours = 40;
+    overtimeHours = hoursWorked - regularHours;
 
 } else {
     //code for folks who didn't work overtime
@@ -25,8 +25,8 @@ if (hoursWorked > 40) {
 let normalPay = payRate * regularHours;
 let overtimePay = (payRate * 1.5) * overtimeHours;
 
-let grossPay = normalPay = overtimePay;
+let grossPay = normalPay + overtimePay;
 
-console.log("I got paid $" + normalPay + "for my regular hours");
-console.log("I got paid $" + overtimepay + "for my regular hours");
-console.log("I got paid $" + grossPay + "for my gross pay")
+console.log("I got paid $" + normalPay + " for my regular hours");
+console.log("I got paid $" + overtimePay + " for my overtime hours");
+console.log("I got paid $" + grossPay + " for my gross pay")
